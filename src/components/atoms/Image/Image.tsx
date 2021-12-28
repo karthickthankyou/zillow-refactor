@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { HTMLAttributes, useState } from 'react'
+import React, { useState } from 'react'
 import NextImage from 'next/image'
 import fallbackImg from 'src/assets/fallback.jpg'
 
 export type IImageProps = React.ComponentProps<typeof NextImage> & {
   fallbackSrc?: string
-  className?: HTMLAttributes<typeof NextImage>['className']
+  className?: string
 }
 
 const Image = (props: IImageProps) => {
@@ -13,15 +13,18 @@ const Image = (props: IImageProps) => {
   const [imgSrc, setImgSrc] = useState(src)
 
   return (
-    <NextImage
-      {...rest}
-      alt={alt}
-      src={imgSrc}
-      className={`object-cover ${className}`}
-      onError={() => {
-        setImgSrc(fallbackSrc)
-      }}
-    />
+    <div className={`relative w-full ${className} overflow-hidden`}>
+      <NextImage
+        {...rest}
+        alt={alt}
+        src={imgSrc}
+        className='object-cover h-full'
+        layout='fill'
+        onError={() => {
+          setImgSrc(fallbackSrc)
+        }}
+      />
+    </div>
   )
 }
 

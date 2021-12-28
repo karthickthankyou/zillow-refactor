@@ -1,12 +1,13 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useAppDispatch, useAppSelector } from 'src/store'
 import { selectCount } from 'src/store/counter'
 import { increment, setCounterState } from 'src/store/counter/counterSlice'
 import { NextSeo } from 'next-seo'
+import Hero from 'src/components/templates/Hero'
+import Cities from 'src/components/templates/Cities'
 
 export const getStaticProps: GetStaticProps = async () => ({
   props: { data: ['Karthick', 'Ragavendran'] }, // will be passed to the page component as props
@@ -55,40 +56,7 @@ const Home: NextPage = ({
       </button>
 
       <main>
-        <h1>
-          Welcome to <a href='https://nextjs.org'>Next.js!</a>
-        </h1>
-
-        <p>
-          Get started by editing <code>pages/index.tsx</code>
-        </p>
-
-        <div>
-          <a href='https://nextjs.org/docs'>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href='https://nextjs.org/learn'>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href='https://github.com/vercel/next.js/tree/master/examples'>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'>
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-        <Link prefetch={false} href='/sample'>
-          <a>To sample page </a>
-        </Link>
+        <Hero />
       </main>
 
       <footer>

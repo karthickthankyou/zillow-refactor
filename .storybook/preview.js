@@ -27,4 +27,5 @@ export const parameters = {
   docs: {
     theme: yourTheme,
   },
+  layout: 'fullscreen',
 }

@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import React from 'react'
 import { Provider } from 'react-redux'
 import { store } from 'src/store'
-import '../globals.css'
+import 'src/globals.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <Provider store={store}>

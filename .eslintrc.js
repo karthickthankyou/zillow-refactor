@@ -61,4 +61,12 @@ module.exports = {
     'react/require-default-props': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
   },
+  overrides: [
+    {
+      files: ['*stories.tsx'],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
+      },
+    },
+  ],
 }

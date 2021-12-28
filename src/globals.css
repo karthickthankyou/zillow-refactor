@@ -18,3 +18,14 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.text-luxury {
+  @apply text-gradient bg-gradient-to-tr via-black to-primary-500 from-primary-500;
+}
