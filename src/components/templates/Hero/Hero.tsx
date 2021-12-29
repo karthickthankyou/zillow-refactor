@@ -8,7 +8,7 @@ export interface IHeroProps {}
 const Hero = () => {
   const [showDialog, setshowDialog] = useState(false)
   return (
-    <div className='flex flex-col items-center justify-center w-screen h-screen bg-cover -z-10 bg-opacity-80 bg-hero'>
+    <div className='flex flex-col items-center justify-center w-screen h-screen bg-scroll bg-cover -z-10 bg-opacity-80 bg-hero'>
       <div className='max-w-lg'>
         <div className='font-black tracking-tight text-center text-7xl leading-80p text-gradient bg-gradient-to-tr via-black to-primary-500 from-primary-400'>
           Change starts <em className=''>here</em>

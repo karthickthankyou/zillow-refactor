@@ -10,8 +10,7 @@ export interface ISearchBoxProps {
 const customStyles = {
   option: (provided, state) => tw`p-3 hover:bg-white`,
 
-  control: () =>
-    tw`z-10 flex p-3 bg-white rounded-md shadow-md backdrop-filter backdrop-blur bg-opacity-80`,
+  control: () => tw`z-10 flex p-3 bg-white rounded-md shadow-md`,
   menu: (provided) => ({
     ...provided,
     ...tw`bg-white rounded-md shadow-md backdrop-filter backdrop-blur bg-opacity-80`,

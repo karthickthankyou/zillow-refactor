@@ -27,5 +27,8 @@ a {
 }
 
 .text-luxury {
-  @apply text-gradient bg-gradient-to-tr via-black to-primary-500 from-primary-500;
+  @apply text-gradient bg-gradient-to-tr via-black to-primary-600 from-primary-400;
+}
+.bg-luxury {
+  @apply bg-gradient-to-tr via-primary-500 to-primary-600 from-primary-400 hover:bg-primary-600 transition-all text-white;
 }
