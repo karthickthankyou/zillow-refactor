@@ -12,7 +12,7 @@ module.exports = {
         '-10': '-10',
       },
       backgroundImage: {
-        hero: "url('https://res.cloudinary.com/thankyou/image/upload/v1640674085/nike/villas_xev2wm.jpg')",
+        hero: "url('https://res.cloudinary.com/thankyou/image/upload/b_black,o_80/v1640667691/nike/rowan-heuvel-bjej8BY1JYQ-unsplash_ekhbh0.jpg')",
         hloan:
           "url('https://res.cloudinary.com/thankyou/image/upload/c_fit,q_auto:eco/a_0/v1640717751/nike/misc/surface-0WFE46jwO8o-unsplash_lk8dfy.jpg')",
         hero2:
@@ -31,6 +31,7 @@ module.exports = {
           800: 'hsl(215, 100%, 15%)',
           900: 'hsl(215, 100%, 05%)',
         },
+        accent: 'hsl(215, 100%, 50%)',
       },
       spacing: {
         112: '28rem',

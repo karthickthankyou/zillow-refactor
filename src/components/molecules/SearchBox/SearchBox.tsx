@@ -15,7 +15,7 @@ const customStyles = {
     ...provided,
     ...tw`bg-white rounded-md shadow-md backdrop-filter backdrop-blur bg-opacity-80`,
   }),
-  base: (provided) => ({ ...provided, ...tw`z-0` }),
+  base: (provided) => ({ ...provided }),
 }
 
 const options = [
@@ -33,7 +33,7 @@ const DropdownIndicator = (props) =>
 
 const SearchBox = ({ className }: ISearchBoxProps) => (
   <Select
-    className={`${className} z-0`}
+    className={`${className}`}
     menuPosition='fixed'
     isClearable
     isSearchable

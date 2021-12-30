@@ -6,7 +6,7 @@ export interface ILinkProps {
   className?: string
   onHover?: () => void
   onBlur?: () => void
-  children: string | ReactElement
+  children: (string | ReactElement) | (string | ReactElement)[]
 }
 
 const MyLink = ({
